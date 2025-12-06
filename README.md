@@ -115,7 +115,6 @@ One-hot encoding with dynamic category expansion
 |-----------------------|---------:|--------:|-------:|
 | LogisticRegression    |    0.555 |  0.587  | 0.517  |
 | RandomForest          |    0.582 |  0.543  | 0.357  |
-| XGBoost               |    —     |    —    | —      |
 
 ### Best Model Selected: Logistic Regression (based on ROC-AUC) ###
 
