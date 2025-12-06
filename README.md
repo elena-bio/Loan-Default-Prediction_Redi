@@ -47,42 +47,27 @@ Loan-Default-Prediction_Redi/
 │
 └── EDA_Report.md                  # Additional EDA summary
  
- ## Exploratory Data Analysis (EDA) ##
+ ## Exploratory Data Analysis (EDA)
 
 The script automatically generates visualizations including:
+* **Distribution Plots:** Loan Amount
+* **Target Distribution** by Categories
+* **Default rate** by Education
+* **Proof submission count**
 
-### Distribution Plots ###
+(plots available inside `/plots/`)
 
-Loan Amount
+**Summary file:** `Elham_EDA_Report.md`
 
-Target Distribution by Categories
-
-Default rate by Education
-
-## Proof submission count ##
-
-(plots available inside /plots/)
-
-### Summary file ###
-```
-Elham_EDA_Report.md
-```
-## Feature Engineering ##
+## Feature Engineering
 
 Features added:
+* `loan_to_asset`
+* `loan_amount_log`
+* **Outlier flags** (column-wise binary indicators)
+* Automatic selection of meaningful categorical features
 
-loan_to_asset
-
-loan_amount_log
-
-Outlier flags (column-wise binary indicators)
-
-Automatic selection of meaningful categorical features
-
-**Output**
-```
-model_ready_loan_data.csv
-```
+**Output:** `model_ready_loan_data.csv`
 
 ## Train/Validation Split ##
 
@@ -92,23 +77,23 @@ Stratified by target
 
 Ensures both classes represented consistently
 
-## Preprocessing Pipeline ##
+## Preprocessing Pipeline
 
-Using Scikit-Learn’s ColumnTransformer:
+Using Scikit-Learn’s `ColumnTransformer`:
 
-### Numeric Pipeline ###
+* **Numeric Pipeline:**
+    * Median imputation
+    * Standard scaling
+* **Categorical Pipeline:**
+    * Mode imputation
+    * One-hot encoding with dynamic category expansion
 
-Median imputation
+## Final Model Training + Submission Generation
 
-Standard scaling
-
-### Categorical Pipeline ###
-
-Mode imputation
-
-One-hot encoding with dynamic category expansion
-
-# Model Training & Evaluation #
+1. Best model is retrained on full dataset
+2. **Saved as:** `best_loan_model.joblib`
+3. Test data processed + predictions created
+4. **Output file:** `submission.csv`
 
 ### Models compared ###
 
