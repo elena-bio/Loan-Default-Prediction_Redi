@@ -41,17 +41,17 @@ Loan default prediction is a key use-case in financial risk modeling. The goal o
 Loan-Default-Prediction_AI/
 │
 ├── app.py                         # Streamlit Dashboard source code (NEW)
-[cite_start]├── loan_pipeline_full.py          # Full automated ML pipeline 
-[cite_start]├── train_LZV4RXX.csv              # Training dataset 
-[cite_start]├── test_XXXXXX.csv                # Test dataset 
+├── loan_pipeline_full.py          # Full automated ML pipeline 
+├── train_LZV4RXX.csv              # Training dataset 
+├── test_XXXXXX.csv                # Test dataset 
 │
-[cite_start]├── cleaned_loan_data_final.csv    # Cleaned training data 
-[cite_start]├── model_ready_loan_data.csv      # Final dataset used for modeling 
+├── cleaned_loan_data_final.csv    # Cleaned training data 
+├── model_ready_loan_data.csv      # Final dataset used for modeling 
 │
-[cite_start]├── best_loan_model.joblib         # Saved trained model 
-[cite_start]├── submission.csv                 # Final model predictions for test set 
+├── best_loan_model.joblib         # Saved trained model 
+├── submission.csv                 # Final model predictions for test set 
 │
-[cite_start]├── plots/                         # All EDA & model evaluation outputs
+├── plots/                         # All EDA & model evaluation outputs
 │   ├── hist_loan_amount.png
 │   ├── corr_heatmap.png
 │   ├── cm_randomforest.png
@@ -59,7 +59,7 @@ Loan-Default-Prediction_AI/
 │   ├── eval_metrics_summary.json
 │   └── ... many more
 │
-[cite_start]└── EDA_Report.md                  # Additional EDA summary
+└── EDA_Report.md                  # Additional EDA summary
 ```
 ## Exploratory Data Analysis (EDA)
 
