@@ -40,10 +40,10 @@ The entire pipeline is implemented in: `loan_pipeline_full.py`.
 ```text
 Loan-Default-Prediction_AI/
 │
-├── app.py                         # Streamlit Dashboard source code (NEW)
-├── loan_pipeline_full.py          # Full automated ML pipeline 
-├── train_LZV4RXX.csv              # Training dataset 
-├── test_XXXXXX.csv                # Test dataset 
+├── app.py                        
+├── loan_pipeline_full.py         
+├── train_LZV4RXX.csv             
+├── test_XXXXXX.csv               
 │
 ├── cleaned_loan_data_final.csv    # Cleaned training data 
 ├── model_ready_loan_data.csv      # Final dataset used for modeling 
